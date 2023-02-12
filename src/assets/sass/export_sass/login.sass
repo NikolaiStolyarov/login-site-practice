@@ -1,0 +1,244 @@
+@keyframes gradient 
+    0% 
+      background-position: 80% 0%
+    50%
+      background-position: 20% 100%
+    100% 
+      background-position: 80% 0%
+
+body
+  //СОЗДАНИЕ АНИМИРОВАНОГО ФОНА
+  height: 300px 
+  width: 100% 
+  background: $background-gradient-main
+  animation: gradient 60s infinite linear 
+  background-size: 380% 
+
+
+%reaction-text
+  &:hover
+    font-size: 25px
+  &:active
+    color: $click-color
+
+.login
+  //ВЫРАВНИВАНИЕ
+  position: absolute
+  left: 50% 
+  top: 50%
+
+  //ДЛЯ ОБЕСПЕЧЕНИЯ РАБОТЫ В ДРУГИХ БРАУЗЕРАХ
+  -webkit-transform: translate(-50%, -50%)
+  -moz-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%)
+  -o-transform: translate(-50%, -50%)
+  transform: translate(-50%, -50%)
+
+  //ФОН СВОЙСТВА
+  border-radius: 75px 
+  height: 930px
+  width: 550px
+  background: $background2
+
+
+.background-login
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+
+.title-text-login // ЗАГЛАВНЫЙ ТЕКСТ
+  color: $main-color2
+  font-family: $font-big
+  font-size: 48px
+  font-weight: 700
+  padding-top: 10%
+  padding-bottom: 10%
+  text-align: center
+
+
+.data-blocks-login
+  //ПУСТО
+
+
+.data-block-name-login
+  //ПУСТО
+
+
+.normal-text-login
+  margin-bottom: 12px 
+  
+
+.forgot-login
+  display: flex
+  flex-direction: column
+  align-items: end 
+  cursor: pointer
+  transition: font 400ms ease
+  @extend %reaction-text
+  
+
+.input-login
+  margin-right: 12px
+  height: 50px
+  background-color: transparent
+  color: $text-second
+  font-weight: 500
+
+
+.button-login
+  background: $background-gradient-main
+  animation: gradient 60s infinite linear // 10s - скорость анимации
+  background-size: 380% // Можно менять и подбирать интенсивность
+  color: $main-color
+  margin-top: 50px
+  margin-bottom: 50px
+  height: 60px
+  width: 420px
+  border-radius: 50px
+  transition: all 400ms ease
+  &:hover
+    font-size: 25px
+    height: 65px
+    width: 430px
+  &:active
+    background: $background-gradient-button
+    background-size: 380% // Можно менять и подбирать интенсивность
+
+
+.login-reg1
+  cursor: pointer
+  transition: font 400ms ease
+  @extend %reaction-text
+
+
+.images-group
+  margin-top: 25px
+  margin-bottom: 150px
+
+
+.images
+  cursor: pointer
+  margin: 0px 5px 
+  height: 70px
+  width: 70px
+  transition: all 400ms ease
+  &:hover
+    height: 75px
+    width: 75px    
+
+.login-reg2
+  margin-bottom: 10px
+  cursor: pointer
+  transition: font 400ms ease
+  @extend %reaction-text
+
+
+.login-reg2-one
+  font-weight: 700
+
+
+
+
+@media screen  and (max-width: 600px) 
+  .login-reg2,
+  .login-reg1,
+  .forgot-login
+    pointer-events: none
+  .login 
+    height: 700px
+    width: 400px
+  .title-text-login
+    font-size: 42px
+  .forgot-login
+    align-items: center
+  .button-login
+    height: 60px
+    width: 280px
+    //pointer-events: none
+    margin-top: 50px
+    margin-bottom: 25px
+    &:hover
+      font-size: 25px
+      height: 60px
+      width: 300px
+  *
+    text-align: center
+  .icons-log
+    height: 25px
+    width: 25px
+  .images-group
+    margin-top: 25px
+    margin-bottom: 25px
+  .min-disp-property-reg
+    display: none
+  .input-login
+    margin-left: 20px
+    width: 320px
+
+    
+  @media screen  and (max-width: 420px) 
+    .login 
+      height: 100%
+      width: 100%
+      border-radius: 0px 
+    .title-text-login
+      margin-top: 20px
+
+  @media screen  and (max-width: 360px) 
+    .login 
+      height: 100%
+      width: 100%
+      border-radius: 0px 
+    .button-login
+      margin-top: 20px
+      margin-bottom: 20px
+    .images-group
+      margin-top: 10px
+      margin-bottom: 10px
+    .title-text-login
+      margin-top: 10px
+    
+  @media screen  and (max-width: 320px) 
+    .login 
+      height: 100%
+      width: 100%
+      border-radius: 0px 
+    .button-login
+      margin-top: 15px
+      margin-bottom: 10px
+      height: 50px
+      width: 250px
+    .images-group
+      margin-top: 10px
+      margin-bottom: 10px
+    .images
+      cursor: pointer
+      margin: 0px 5px 
+      height: 50px
+      width: 50px
+      transition: all 400ms ease
+      &:hover
+        height: 55px
+        width: 55px   
+    .title-text-login
+      margin-top: 0px
+    .input-login
+      width: 250px
+    .button-login
+      height: 60px
+      width: 280px
+      //pointer-events: none
+      margin-top: 20px
+      margin-bottom: 10px
+      &:hover
+        font-size: 25px
+        height: 60px
+        width: 290px
+    
+  
+  
+
+
+

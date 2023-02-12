@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!--устанавливает набор символов документа в UTF-8, который является широко используемой кодировкой символов-->
+    <meta charset="UTF-8">
+    <!-- связывает HTML-документ с внешней таблицей стилей под названием "style.min.css", расположенной в папке "assets/css".-->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <!-- указывает Internet Explorer использовать последнюю версию своего механизма рендеринга, а не более старую версию. -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- браузеру, как управлять размерами страницы и масштабированием на мобильных устройствах. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- сообщает браузеру, что ширина видового экрана должна составлять 1140 пикселей. -->
+    <meta content="width=1140" name="viewport" id="viewport">
+    <!-- указывает поисковым системам индексировать страницу и переходить по ее ссылкам, а также использовать описание страницы проекта Open Directory, если таковое имеется. -->
+    <meta name="robots" content="index, follow, noodp">
+    <!-- индексировать страницу и переходить по ее ссылкам. -->
+    <meta name="googlebot" content="index, follow">
+    <!-- указывает Google не предлагать перевод для этой страницы. -->
+    <meta name="google" content="notranslate">
+    <!--  говорит мобильным устройствам не связывать автоматически определенные строки номеров как телефонные номера. -->
+    <meta name="format-detection" content="telephone=no">
+    <!-- Подключение иконок -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <script src="https://kit.fontawesome.com/07c048a61f.js" crossorigin="anonymous"></script>
+    
+    <title>Главная</title>
+</head>
+<body>
+    
+    <div class="login">
+      <div class="background-login">
+        <h1 class="title-text-login">Вход</h1> <!--  --> 
+        <div class="data-blocks-login"> 
+          <div class="data-block-name-login">
+            <p class="normal-text-login">Имя</p> 
+            <i class="fa-solid fa-user-large input-login icons-log"></i>  
+            <input type="text" class="input-login myInput-user" name="username" value="Введите свое имя" />
+          </div>
+          <div class="data-block-password-login">
+            <p class="normal-text-login">Пароль</p>
+            <i class="fa-solid fa-lock input-login icons-log"></i>
+            <input type="text" class="input-login myInput-password" name="userpass" value="Введите свой пароль" />
+          </div>
+          <a href="#"><p href="#" class="forgot-login">Забыли пароль?</p></a>
+        </div>
+        <div class="button-block-login">
+          <a href="#"><button class="button-login" name="button">Войти</button></a>
+        </div>
+        <a href="#"><p class="login-reg1 min-disp-property-reg" href="#" >или вход с помошью</p></a>
+        <div class="images-group">
+          <a href="https://ru-ru.facebook.com" target="_blank"><img class="images" src="assets/img/facebook1_logo_icon.webp" alt=""></a>
+          <a href="https://twitter.com/?lang=ru" target="_blank"><img class="images" src="assets/img/twitter1_logo_icon.webp" alt=""></a>
+          <a href="https://www.google.ru/" target="_blank"><img class="images" src="assets/img/google_logo_icon.webp" alt=""></a>
+        </div>
+        <a href="#"><p class="login-reg2 min-disp-property-reg" href="#" >или вход с помошью</p></a>
+        <a href="#" ><p class="login-reg2 login-reg2-one" href="#" >зарегистрироваться</p></a>
+      </div>
+    </div>
+    
+    <script src="assets/js/main.min.js"></script></body>
+</html>
